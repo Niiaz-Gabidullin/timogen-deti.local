@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+@font-face{
+    font-family: 'CeraPro Regular';
+    src: url('../fonts/CeraPro/CeraPro-Regular.eot');
+    src: url('../fonts/CeraPro/CeraPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro/CeraPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'CeraPro Medium';
+    src: url('../fonts/CeraPro/CeraPro-Medium.eot');
+    src: url('../fonts/CeraPro/CeraPro-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro/CeraPro-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+    font-family: 'CeraPro Bold';
+    src: url('../fonts/CeraPro/CeraPro-Bold.eot');
+    src: url('../fonts/CeraPro/CeraPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/CeraPro/CeraPro-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body{
+    font-family: 'CeraPro Regular',sans-serif;
+    color: #3E4D5B;
+}
+
+//Основные классы со свойствами для текста
+.main__title{
+    margin: 0;
+    font-family: 'CeraPro Bold', sans-serif;
+    font-size: 42px;
+    @media ( max-width: 1024px){
+        font-size: 38px
+    }
+    @media ( max-width: 640px){
+        font-size: 28px
+    }
+    @media ( max-width: 400px){
+        font-size: 24px
+    }
+}

@@ -1,0 +1,30 @@
+{
+  "name": "timogen-deti.local",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/denwerado/timogen-deti.git"
+  },
+  "author": "Denis Malkin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/denwerado/timogen-deti/issues"
+  },
+  "homepage": "https://gitlab.com/denwerado/timogen-deti#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-svgstore": "^8.0.0",
+    "sass": "^1.42.1"
+  },
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "gulp-svgmin": "^4.0.1"
+  }
+}

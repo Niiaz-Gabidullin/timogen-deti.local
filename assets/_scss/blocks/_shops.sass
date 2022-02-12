@@ -1,0 +1,86 @@
+.shops
+    position: relative
+    padding: 50px 0 110px 0
+    &__block
+        position: relative
+    &__title
+        margin: 0
+        text-align: center
+        & .logo
+            max-height: 84px
+            transform: translateY(18%)
+        & .text
+            font-size: 74px
+            font-family: 'CeraPro Bold',sans-serif
+    &__description
+        margin: 0
+        margin-top: 40px
+        font-size: 24px
+        text-align: center
+    &__wrap
+        display: flex
+        justify-content: space-evenly
+        flex-wrap: wrap
+        margin: auto
+        margin-top: 10px
+        max-width: 1200px
+    &__item
+        margin-top: 40px
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 250px
+        height: 120px
+        border: 1px solid rgba(#183E86, 0.3)
+        border-radius: 10px
+        transition: 0.6s all
+        &:hover
+            box-shadow: 4px 4px 12px 0px rgba(34, 60, 80, 0.2)
+            & .shops__item .image
+                width: 100%
+    & .background-star
+        position: absolute
+        top: 4px
+        left: 9%
+        width: 14%
+        max-width: 270px
+
+@media ( max-width: 1024px )
+    .shops
+        padding: 100px 0 80px 0
+        &__title
+            & .logo
+                max-height: 70px
+            & .text
+                font-size: 64px
+        &__description
+            margin-top: 25px
+        &__wrap
+            justify-content: space-between
+            max-width: 540px
+
+@media ( max-width: 768px )
+    .shops
+        padding: 70px 0
+        &__title
+            & .logo
+                max-height: 57px
+            & .text
+                font-size: 50px
+        &__description
+            margin-top: 10px
+            font-size: 18px
+
+@media ( max-width: 576px )
+    .shops
+        &__title
+            & .logo
+                max-height: 37px
+            & .text
+                font-size: 36px
+        &__description
+            margin-top: 20px
+        &__wrap
+            justify-content: space-evenly
+        &__item
+            margin-top: 40px

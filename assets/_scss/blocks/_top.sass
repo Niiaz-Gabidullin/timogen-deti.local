@@ -1,0 +1,208 @@
+.top
+    position: relative
+    padding: 285px 0
+    background: url('../images/backgrounds/background_top.png') no-repeat
+    background-size: cover
+    & .info
+        //position: relative
+        max-width: 880px
+        & .title
+            margin: 0
+            color: #183E86
+            & .logo
+                display: inline !important
+                height: 96px
+                width: auto
+                transform: translateY(18%)
+            & .text
+                font-size: 84px
+                font-family: "CeraPro Bold",sans-serif
+        & .description
+            position: relative
+            margin: 0
+            margin-top: 35px
+            font-family: 'CeraPro Medium'
+            font-size: 22px
+            line-height: 1.2em
+            z-index: 2
+        & .buttons
+            margin-top: 50px
+            & .cmp-button__red_reverse
+                margin-left: 45px
+    &__background
+        position: absolute
+        bottom: 0
+        right: 10%
+        display: flex
+        align-items: flex-end
+        justify-content: flex-end
+        max-width: 870px
+        width: 45%
+        height: 100%
+        & #images__slider
+            & .owl-stage
+                display: flex !important
+                align-items: flex-end !important
+        & .wrap-main
+            width: 100%
+            overflow: hidden
+            & .background-boy-main
+                display: block
+                width: 100%
+            & .background-girl-main
+                padding-left: 17.5%
+                display: block
+                //width: 82.5%
+        & .background-spray
+            position: absolute
+            right: 0
+            bottom: 0
+            width: 60%
+            transform: translateX(20%) translateY(24%)
+            z-index: 1
+    & .background-asterisks
+        position: absolute
+        left: 0
+        right: 0
+        margin-left: auto
+        margin-right: auto
+        bottom: 0
+        transform: translateY(71%)
+        width: 15%
+        max-width: 288px
+        z-index: 1
+
+@media ( max-width: 1600px )
+    .top 
+        &__background
+            right: 5%
+            & .background-spray
+                transform: translateX(15%) translateY(24%)
+
+@media ( max-width: 1024px )
+    .top 
+        padding: 240px 0 255px 0
+        & .info
+            width: 63%
+            max-width: 610px
+            & .title
+                & .logo
+                    max-height: 59px
+                & .text
+                    font-size: 58px
+            & .description
+                margin-top: 25px
+                font-size: 20px
+            & .buttons
+                margin-top: 40px
+                & .cmp-button__red
+                    font-size: 18px
+                & .cmp-button__red_reverse
+                    font-size: 18px
+                    margin-left: 30px
+        &__background
+            right: 0
+            width: 61%
+            & .wrap-main
+                & .background-boy-main
+                    width: 110%
+                & .background-girl-main
+                    padding-left: 20%
+                    transform: translateX(8%) translateY(2%)
+            & .background-spray
+                right: 0
+                width: 46.8%
+                transform: translateY(24%)
+        & .background-asterisks
+            width: 14.7%
+
+@media ( max-width: 950px )
+    .top 
+        & .info
+            width: 66%
+            
+@media ( max-width: 910px )
+    .top 
+        & .info
+            width: 68%
+    
+@media ( max-width: 890px )
+    .top 
+        & .info
+            width: 70%
+    
+@media ( max-width: 860px )
+    .top 
+        & .info
+            width: 72%
+
+@media ( max-width: 830px )
+    .top 
+        & .info
+            width: auto
+        &__background
+            & .wrap-main
+                & .background-boy-main
+                    transform: translateY(12%) translateX(2%)
+                //& .background-girl-main
+
+@media ( max-width: 768px )
+    .top
+        padding: 255px 0 0 0
+        background: url('../images/backgrounds/background_top-mobile.png') no-repeat
+        background-size: cover
+        & .info
+            max-width: 768px
+        &__background
+            position: static
+            height: auto
+            width: 100%
+            & .wrap-main
+                margin: auto
+                width: 72%
+                & .background-boy-main
+                    width: 100%
+                    transform: none
+                .background-girl-main
+                    padding-left: 0
+                    width: 100%
+                    transform: none
+            & .background-spray
+                width: 36%
+
+@media ( max-width: 576px )
+    .top
+        padding: 150px 0 0 0
+        & .info
+            & .title
+                & .logo
+                    max-height: 37px
+                & .text
+                    font-size: 36px
+            & .description
+                margin-top: 20px
+                font-size: 18px
+        &__background
+            & .wrap-main
+                width: 100%
+
+@media ( max-width: 450px )
+    .top
+        & .info
+            & .buttons
+                position: absolute
+                bottom: 10px
+                left: 14px
+                right: 14px
+                z-index: 2
+                & .cmp-button__red
+                    display: block
+                    text-align: center
+                & .cmp-button__red_reverse
+                    margin: 0
+                    margin-top: 20px
+                    display: block
+                    text-align: center
+        &__background
+            & .background-spray
+                display: none

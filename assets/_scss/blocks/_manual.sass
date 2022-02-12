@@ -1,0 +1,227 @@
+.manual
+    position: relative
+    padding: 100px 0 130px 0
+    &__block
+        position: relative
+         z-index: 1
+    &__title
+        margin: 0
+        max-width: 920px
+        & .logo
+            max-height: 84px
+            transform: translateY(18%)
+        & .text
+            font-size: 74px
+            font-family: 'CeraPro Bold',sans-serif
+    &__subtitle
+        margin: 0
+        margin-top: 40px
+        font-size: 24px
+        max-width: 700px
+    &__description
+        margin: 0
+        margin-top: 40px
+        font-size: 46px
+        font-family: 'CeraPro Medium',sans-serif
+    &__postscript
+        margin: 0
+        margin-top: 15px
+        font-size: 24px
+    &__wrap
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        & .cmp-line__vertical
+            margin-top: 50px
+    &__item
+
+        max-width: 430px
+        padding: 0 10px
+        margin-top: 50px
+        & .age
+            margin: 0
+            font-size: 44px
+            color: #183E86
+            font-family: 'CeraPro Medium',sans-serif
+        & .wrap
+            margin-top: 30px
+            display: flex
+            align-items: center
+            & .text
+                margin-left: 40px
+                font-size: 26px
+                & .bold
+                    font-family: 'CeraPro Medium',sans-serif
+                    color: #ED1C39
+        
+    &__explanation
+        position: relative
+        margin-top: 30px
+        display: flex
+        align-items: center
+        max-width: 1170px
+        & .info
+            max-width: 620px
+            margin-left: 25px
+            & .text
+                font-size: 22px
+                &:nth-child(n+2)
+                    margin-top: 30px
+            & .cmp-button__red_reverse
+                margin-top: 50px
+    & .background
+        &-spray
+            position: absolute
+            bottom: 78px
+            right: 4.6%
+            width: 24.8%
+            max-width: 478px
+        &-flying-kite
+            position: absolute
+            top: 46px
+            right: 0
+            width: 30%
+            max-width: 564px
+        &-bird
+            position: absolute
+            top: 0
+            left: 0
+            width: 10.4%
+            max-width: 200px
+            transform: translateY(-13%)
+
+@media ( max-width: 1330px )
+    .manual
+        &__wrap
+            & .cmp-line__vertical
+                &:nth-child(4)
+                    display: none
+
+@media ( max-width: 1300px )
+    .manual
+        &__title
+            & .logo
+                max-height: 70px
+            & .text
+                font-size: 63px
+
+@media ( max-width: 1024px )
+    .manual
+        padding: 100px 0 80px 0
+        &__title
+            margin: 0
+            //max-width: 650px
+            & .logo
+                max-height: 70px
+            & .text
+                font-size: 64px
+        &__subtitle
+            margin-top: 30px
+            font-size: 18px
+        &__description
+            margin-top: 20px
+        &__wrap
+            flex-wrap: wrap
+        &__item
+            max-width: 420px
+        &__explanation
+            margin-top: 190px
+            & .image
+                width: 36.5%
+            & .info
+                max-width: 540px
+                & .text
+                    font-size: 18px
+                & .cmp-button__red_reverse
+                    font-size: 18px
+        & .background
+            &-spray
+                display: none
+            &-flying-kite
+                top: auto
+                bottom: 525px
+                right: 2%
+                width: 40%
+            &-bird
+                top: 45px
+                left: auto
+                right: 6%
+                width: 20%
+
+@media ( max-width: 920px )
+    .manual
+        &__wrap
+            & .cmp-line__vertical
+                    display: none
+
+@media ( max-width: 768px )
+    .manual
+        padding: 120px 0 40px 0
+        &__title
+            & .logo
+                max-height: 57px
+            & .text
+                font-size: 50px
+        &__description
+            font-size: 36px
+        &__postscript
+            margin-top: 20px
+        &__item
+            max-width: 380px
+        &__explanation
+            margin-top: 50px
+            display: block
+            & .image
+                margin: auto
+                display: block
+                width: 60%
+                max-width: 365px
+            & .info
+                margin: 0
+                margin-top: 30px
+                & .cmp-button__red_reverse
+                    margin-top: 40px
+        & .background
+            &-flying-kite
+                bottom: 716px
+                right: 0
+                width: 40%
+            &-bird
+                top: 413px
+                right: 6%
+                width: 31%
+
+@media ( max-width: 576px )
+    .manual
+        padding: 70px 0 40px 0
+        &__title
+            & .logo
+                max-height: 37px
+            & .text
+                font-size: 36px
+        &__description
+            margin-top: 20px
+            font-size: 26px
+        &__postscript
+            margin-top: 15px
+            font-size: 18px
+        &__item
+            margin-top: 35px
+            & .age
+                font-size: 32px
+            & .wrap
+                margin-top: 20px
+                & .image
+                    max-width: 80px
+                & .text
+                    margin-left: 20px
+                    font-size: 18px
+        &__explanation
+            & .image
+                width: 100%
+            & .info
+                margin-top: 30px
+                & .cmp-button__red_reverse
+                    display: block
+                    margin-top: 30px
+                    text-align: center

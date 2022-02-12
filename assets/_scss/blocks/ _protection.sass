@@ -1,0 +1,133 @@
+.protection
+    position: relative
+    padding: 110px 0 0 0
+    background: linear-gradient(170deg,rgb(252, 247,223),rgba(252,247 ,223, 0.4 ), rgb(252,247,223))
+    &__title
+        position: relative
+        margin: 0
+        max-width: 800px
+        z-index: 1
+        & .logo
+            max-height: 84px
+            transform: translateY(18%)
+        & .text
+            font-size: 74px
+            font-family: 'CeraPro Bold',sans-serif
+    & .info
+        position: relative
+        margin-top: 40px
+        display: flex
+        align-items: start
+        justify-content: space-between
+        z-index: 1
+        & .description
+            margin: 0
+            font-size: 22px
+            letter-spacing: 1%
+            &:nth-child(1)
+                max-width: 690px
+            &:nth-child(2)
+                padding-left: 15px
+                max-width: 625px
+    &__background
+        position: relative
+        margin-top: 80px
+        width: 100%
+        & .background-main
+            display: block
+            width: 100%
+        & .background-spray
+            position: absolute
+            right: 7%
+            bottom: 0
+            width: 23%
+            max-width: 480px
+            transform: translateY(25%)
+    & .background-plane
+        position: absolute
+        right: 0
+        top: 20px
+        width:  17%
+        max-width: 322px
+    & .background-star
+        position: absolute
+        top: 0
+        left: 2.5%
+        width: 12%
+        max-width: 220px
+        transform: translateY(-20%)
+
+@media ( max-width: 1300px )
+    .protection
+        &__title
+            & .logo
+                max-height: 70px
+            & .text
+                font-size: 63px
+
+@media ( max-width: 1024px )
+    .protection
+        padding: 50px 0 0 0
+        &__title
+            & .logo
+                max-height: 67px
+            & .text
+                font-size: 58px
+        & .info
+            margin-top: 30px
+            display: block
+            & .description
+                font-size: 18px
+                &:nth-child(1)
+                    max-width: 650px
+                &:nth-child(2)
+                    margin-top: 20px
+                    padding: 0
+                    max-width: 650px
+        &__background
+            margin-top: 70px
+            & .background-spray
+                right: 4.9%
+                width: 25%
+        & .background-plane
+            top: 50px
+            width: 28%
+
+@media ( max-width: 768px )
+    .protection
+        padding: 70px 0 0 0
+        &__title
+            & .logo
+                max-height: 57px
+            & .text
+                font-size: 50px
+        &__background
+            & .background-spray
+                right: 3.6%
+                width: 28.4%
+        & .background-plane
+            top: 295px
+            width: 22.8%
+        & .background-star
+            top: 45px
+            left: 0
+
+@media ( max-width: 576px )
+    .protection
+        &__title
+            & .logo
+                max-height: 37px
+            & .text
+                font-size: 36px
+        & .info
+            margin-top: 20px
+        &__background
+            height: 320px
+            margin-top: 35px
+            & .background-main
+                width: 100%
+                height: 100%
+                object-fit: cover
+            & .background-spray
+                right: 0
+                width: 40%

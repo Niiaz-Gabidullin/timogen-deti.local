@@ -1,0 +1,289 @@
+.benefit
+    position: relative
+    padding: 250px 0 80px 0px
+    &_yellow
+        background: linear-gradient(-170deg,rgb(252, 247,223),rgba(252,247 ,223, 0.4 ), rgb(252,247,223))
+    &__block
+        display: flex
+        align-items: start
+        justify-content: space-between
+        & .info
+            position: relative
+            &_first
+                max-width: 815px
+                padding-right: 25px
+                width: 52%
+                & .cmp-card
+                    margin-top: 20px
+                    &__item
+                        &:nth-child(4)
+                            display: flex
+                            align-items: center
+                            padding: 30px
+                            width: 100%
+                            min-height: 190px
+                            & .cmp-card__text
+                                margin: 0
+                                margin-left: 25px
+                                max-width: 580px
+            &_second
+                max-width: 835px
+                width: 57.8%
+                padding-right: 25px
+                & .cmp-card
+                    position: relative
+                    margin-top: 20px
+                    &__item
+                        position: relative
+                        width: 375px
+                        min-height: 250px
+                        z-index: 1
+                    & .fan
+                        position: absolute
+                        bottom: 0
+                        left: 0
+                        transform: translateX(-60%)
+                        display: none
+            & .title
+                margin: 0
+                margin-bottom: 40px
+                & .logo
+                    max-height: 84px
+                    transform: translateY(18%)
+                & .text
+                    font-size: 74px
+                    font-family: 'CeraPro Bold',sans-serif
+            & .description
+                margin: 0
+                margin-top: 25px
+                max-width: 710px
+                font-size: 22px
+        & .cmp-button__red-desctop
+            margin-top: 60px
+        & .cmp-button__red-mobile
+            display: none
+        & .images
+            position: relative
+            max-width: 735px
+            width: 48%
+            & .wrap-main
+                overflow: hidden
+                width: 100%
+                border-bottom-left-radius: 80px
+                & .image-main
+                    display: block
+                    width: 100%
+            & .image-spray
+                position: absolute
+                right: 0
+                bottom: 0
+                width: 65%
+                transform: translateX(23%) translateY(23%)
+                z-index: 1
+            & .image-bird
+                position: absolute
+                top: 0
+                left: 0
+                width: 26%
+                transform: translateY(-81%) translateX(-33%)
+    & .background-cloud_1
+        position: absolute
+        left: 0
+        top: 95px
+        width: 36.5%
+        max-width: 700px
+    & .background-cloud_2
+        position: absolute
+        top: 420px
+        left: 32%
+        width: 26%
+        max-width: 495px
+    & .background-train
+        position: absolute
+        top: 0
+        left: 0
+        width: 21%
+        max-width: 400px
+    & .background-heart
+        position: absolute
+        top: 75px
+        right: 4%
+        //width: 4.9%
+        max-width: 94px
+
+@media ( max-width: 1850px )
+    .benefit
+        &__block
+            & .images
+                & .image-spray
+                    transform: translateY(23%)
+
+@media ( max-width: 1550px )
+    .benefit
+        &__block
+            & .info  
+                & .title
+                    & .logo
+                        max-height: 70px
+                    & .text
+                        font-size: 63px
+                &_first
+                    & .cmp-card
+                        &__item
+                            width: 48.7%
+                            min-height: 190px
+                            &:nth-child(4)
+                                display: block
+                                padding: 20px
+                                width: 48.7%
+                                & .cmp-card__text
+                                    margin: 0
+                                    margin-top: 20px
+                &_second
+                    & .cmp-card
+                        &__item
+                            width: 48.7%
+                            min-height: 190px
+                            &:nth-child(4)
+                                display: block
+                                padding: 20px
+                                width: 48.7%
+                                & .cmp-card__text
+                                    margin: 0
+                                    margin-top: 20px
+
+@media ( max-width: 1300px )
+    .benefit
+        & .container
+            padding: 0 0 0 20px
+        &__block
+            & .info
+                width: auto
+            & .images
+                width: 35.5%
+                &_second
+                    margin-top: 145px
+                & .wrap-main
+                    height: 100%
+                    & .image-main
+                        width: auto
+                        height: 100%
+                        transform: translateX(-18%)
+                & .image-spray
+                    width: 58%
+
+@media ( max-width: 1024px )
+    .benefit
+        padding: 100px 0 50px 0
+        &__block
+            & .info
+                & .title
+                    margin-bottom: 30px
+                    & .logo
+                        max-height: 67px
+                    & .text
+                        font-size: 58px
+                & .description
+                    margin-top: 20px
+                    font-size: 18px
+                &_first
+                    .cmp-card
+                        margin-top: 15px
+                        & .cmp-card__item
+                            margin-top: 15px
+                        & .cmp-card__text
+                            font-size: 18px !important
+                        & .cmp-card__image
+                            max-width: 60px
+                &_second
+                    .cmp-card
+                        margin-top: 15px
+                        & .cmp-card__item
+                            margin-top: 15px
+                        & .cmp-card__text
+                            font-size: 18px !important
+                        & .cmp-card__image
+                            max-width: 60px
+        & .background-train
+            width: 26.7%
+        & .background-heart
+            right: 2.3%
+
+@media ( max-width: 800px )
+    .benefit
+        &__block
+            & .images
+                & .wrap-main
+                    & .image-main
+                        transform: translateX(-24%)
+
+@media ( max-width: 768px )
+    .benefit
+        & .container
+            padding: 0 20px 0 20px
+        &__block
+            display: block 
+            & .info
+                &_first
+                    padding: 0
+                    & .cmp-card
+                        &__item
+                            width: 47.5% !important
+                &_second
+                    padding: 0
+                    & .cmp-card
+                        &__item
+                            width: 47.5% !important
+                & .title
+                    & .logo
+                        max-height: 57px
+                    & .text
+                        font-size: 50px
+            & .cmp-button__red-desctop
+                display: none
+            & .cmp-button__red-mobile
+                margin: auto
+                margin-top: 50px
+                display: table
+            & .images
+                margin-top: 40px
+                width: 100%
+                & .wrap-main
+                    height: auto
+                    & .image-main
+                        height: auto
+                        width: 100%
+                        transform: none
+                & .image-spray
+                    width: 36%
+                & .image-bird
+                    display: none
+        & .background-train
+            width: 32%
+        & .background-heart
+            right: 1%
+
+@media ( max-width: 576px )                    
+    .benefit
+        padding: 70px 0 0 0 
+        &__block
+            & .info
+                &_first
+                    & .cmp-card
+                        &__item
+                            width: 100% !important
+                            min-height: 0
+                &_second
+                    & .cmp-card
+                        &__item
+                            width: 100% !important
+                            min-height: 0
+                & .title
+                    & .logo
+                        max-height: 37px
+                    & .text
+                        font-size: 36px
+                        margin-bottom: 0
+            & .cmp-button__red-mobile
+                display: block
+                margin-top: 30px
